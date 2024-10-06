@@ -1,0 +1,4 @@
+INDEX VERSION 1.4+D:\2024-2_javaweb_works\git\javaweb\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+149054581.index
+1373210670.index
+1792360262.index
