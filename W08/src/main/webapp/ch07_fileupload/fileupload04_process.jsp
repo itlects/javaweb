@@ -17,6 +17,18 @@
 	upload.setRepositoryPath(path);
 
 	List items = upload.parseRequest(request);
+//https://oingdaddy.tistory.com/326	
+// 	List<FileItem> items = new ArrayList<FileItem>(); 
+// 	Iterator it = request.getFileNames();
+// 	while(it.hasNext()) {    
+// 		List<MultipartFile> list = request.getFiles(it.next().toString());    
+// 		for(int i = 0 ; i < list.size() ; i++) {        
+// 			CommonsMultipartFile cmpFile = (CommonsMultipartFile)list.get(i);        
+// 			items.add(cmpFile.getFileItem());    
+// 		}
+// 	}
+
+	
 	Iterator params = items.iterator();
 
 	while (params.hasNext()) {
