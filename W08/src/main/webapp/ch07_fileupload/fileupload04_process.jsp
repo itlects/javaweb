@@ -11,7 +11,8 @@
 	String path = "C:\\upload";
 
 	DiskFileUpload upload = new DiskFileUpload();
-
+	//JakartaServletDiskFileUpload upload = new JakartaServletDiskFileUpload();
+		
 	upload.setSizeMax(1000000);
 	upload.setSizeThreshold(4096);
 	upload.setRepositoryPath(path);
