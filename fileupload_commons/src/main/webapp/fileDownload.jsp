@@ -8,9 +8,10 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
+
 <body>
-	<img src="${ pageContext.request.contextPath }/fileDownload.do?fileName=naver-logo.png" width="500" height="500" />
+	<img src="${ pageContext.request.contextPath }/fileDownload.do?fileName=google2.png" width="500" height="500" />
 	<br>
-	<a href="${ pageContext.request.contextPath }/fileDownload.do?fileName=naver-logo.png"> file download</a>
+	<a href="${ pageContext.request.contextPath }/fileDownload.do?fileName=google2.png"> file download</a>
 </body>
 </html>

@@ -2,7 +2,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"
     isELIgnored="false"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%-- java1.8 tomcat9 에서 사용 
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %> 
+--%>
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
+
 <c:set var="contextPath" value="${pageContext.request.contextPath}" />
 <%
 	request.setCharacterEncoding("utf-8");
@@ -23,14 +27,15 @@
 	<c:out value="${file2}" /><br>
 	
 	<c:if test="${not empty file1 }">
-	<img src="${contextPath}/download.do?fileName=${file1}" width=300 height=300 /><br> <%-- 파일 이름으로 서블릿에서 이미지를 다운로드해 표시함 --%>
+	<%-- 파일 이름으로 contextpath경로에 있는(webapp/files/에 위치한 파일을 표시함 --%>
+	<img src="${contextPath}/files/${file1}" width=300 height=300 /><br> 
 	</c:if>
 	<br>
 	<c:if test="${not empty file2 }">
-	<img src="${contextPath}/download.do?fileName=${file2}" width=300 height=300 /><br> <%-- 파일 이름으로 서블릿에서 이미지를 다운로드해 표시함 --%>
+	<%-- 파일 이름으로 서블릿에서 이미지를 다운로드해 표시함 --%>
+	<img src="${contextPath}/download.do?fileName=${file2}" width=300 height=300 /><br> 
 	</c:if>
 	파일 내려받기 :<br>
 	<a href="${contextPath}/download.do?fileName=${file2}"> <%-- 이미지를 파일로 다운로드 함 --%>
 		파일 내려받기 </a><br>
 </body>
-</html>

@@ -49,7 +49,7 @@ public class fileUpload extends HttpServlet {
             upload.setFileSizeMax(1024*1024);
             upload.setSizeMax(1024*1024);
         
-            String uploadPath = "d:/test/repo";
+            String uploadPath = "c:/upload";
             System.out.println("파일업로드 "+ uploadPath);
             File uploadDir = new File(uploadPath);
             if (!uploadDir.exists()) {

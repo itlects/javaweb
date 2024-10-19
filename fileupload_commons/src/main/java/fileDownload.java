@@ -40,7 +40,7 @@ public class fileDownload extends HttpServlet {
 		request.setCharacterEncoding("utf-8");
 		response.setContentType("text/html;charset=utf-8");
 		
-		String file_repo = "d:/test/uploadedFiles";
+		String file_repo = "c:/upload";
 		String fileName = request.getParameter("fileName");
 		String downloadFileFullPath = String.format("%s/%s", file_repo, fileName);
 		System.out.println("다운로드 " + downloadFileFullPath);
