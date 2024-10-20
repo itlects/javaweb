@@ -4,7 +4,8 @@
 <title>File Upload</title>
 </head>
 <body>
-	<form name="fileForm" method="post" enctype="multipart/form-data" action="fileupload02_process2.jsp">
+	<form name="fileForm" method="post" enctype="multipart/form-data" 
+		action="fileupload02_process2.jsp">
 		<p>이 름1  : <input type="text" name="name1"> 
 			제 목1 : <input type="text" name="subject1"> 
 			파 일1 : <input type="file" name="filename1">
